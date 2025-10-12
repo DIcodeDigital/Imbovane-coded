@@ -21,7 +21,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       referrerpolicy="no-referrer"
     />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link
       rel="icon"
       href="https://imbovane.africa/wp-content/uploads/2022/02/Asset-3.png"
@@ -44,7 +43,7 @@
     />
   </head>
   <body>
-    <!-- ===================== HEADER ===================== -->
+    <!-- ================================== HEADER ====================================================== -->
 <header id="MainHeader" class="fixed-top py-3 glass-nav sticky-header">
   <div class="container d-flex justify-content-between align-items-center">
     <div class="brand d-flex align-items-center">
@@ -89,7 +88,7 @@
   </div>
 </header>
 
-<!-- ===================== HERO SECTION ===================== -->
+<!-- ===================================================== HERO SECTION ===================== -->
 <section id="HeroSection">
   <div class="slide-layer"></div>
   <div class="slide-layer"></div>
@@ -105,13 +104,13 @@
   <div id="slideIndicators"></div>
 </section>
 
-<!-- ===================== SCROLL TO TOP BUTTON ===================== -->
+<!-- ==================================================== SCROLL TO TOP BUTTON ===================== -->
 <button id="scrollTopBtn" title="Go to top">
   <i class="fa-solid fa-chevron-up"></i>
 </button>
 
 
-<!-- =================== ABOUT SECTION =================== -->
+<!-- ==================================================== ABOUT SECTION =================== -->
 <section id="AboutSection" class="py-5">
   <div class="container">
     <!-- Section Title -->
@@ -174,7 +173,7 @@
 
 
 
-    <!-- ========== HOMEPAGE SERVICES (Premium, conversion-focused) ========== -->
+<!-- ========================================== HOMEPAGE SERVICES (Premium, conversion-focused) ============= -->
 <section id="ServiceSection" class="services-hero">
   <div class="container">
 
@@ -187,7 +186,6 @@
     <div class="services-body">
       <!-- Left: cards grid -->
       <div class="services-cards" role="list">
-        <!-- Service card (repeat pattern) -->
         <article class="service-card" tabindex="0" role="listitem" aria-label="SMME Shaped Solutions — brief">
           <div class="card-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></div>
           <h3>SMME Shaped Solutions</h3>
@@ -218,7 +216,7 @@
           <p class="card-desc">Practical coaching that builds internal capability and removes bottlenecks.</p>
         </article>
 
-        <!-- Large arrow card linking to full services page (gateway card) -->
+        <!-- Large arrow card linking to full services page -->
         <a class="service-card arrow-card" href="/services.html" aria-label="See full services" role="listitem">
           <div class="arrow-wrap">
             <span class="arrow-symbol">→</span>
@@ -228,21 +226,21 @@
       </div>
 
       <!-- Right: Leonardo photo cluster + micro-case -->
-      <aside class="services-visual" aria-hidden="false">
-        <div class="photo-stack">
-          <!-- replace sources with your actual images -->
-          <img src="Images/leonardo-portrait.jpg" alt="Leonardo Barnes — Founder" class="photo main" />
-          <img src="Images/leonardo-workshop.jpg" alt="" class="photo small one" />
-          <img src="Images/workspace-detail.jpg" alt="" class="photo small two" />
-          <img src="Images/leonardo-candid-bw.jpg" alt="" class="photo small three" />
-        </div>
+<aside class="services-visual" aria-hidden="false">
+  <div class="bento-grid">
+    <img src="Images/main-img1.jpg" alt="Leonardo Barnes — Founder" class="bento-item large" />
+    <img src="Images/main-img2.JPG" alt="Team collaboration" class="bento-item tall" />
+    <img src="Images/main-img3.jpg" alt="Workshop session" class="bento-item wide" />
+    <img src="Images/main-img4.jpg" alt="Client success" class="bento-item small" />
+  </div>
 
-        <div class="micro-case">
-          <strong>Result-focused:</strong>
-          <p>Example: Improved client cash conversion +28% in 6 months — systems + pricing strategy.</p>
-          <a class="cta-ghost" href="/services.html">Book a clarity call</a>
-        </div>
-      </aside>
+  <div class="micro-case">
+    <strong>Result-focused:</strong>
+    <p>Example: Improved client cash conversion +28% in 6 months — systems + pricing strategy.</p>
+    <a class="cta-ghost" href="/services.html">Book a clarity call</a>
+  </div>
+</aside>
+
     </div>
 
   </div>
@@ -311,7 +309,7 @@
         </div>
       </section>
 
-      <!-- ======================= TESTIMONIAL SECTION ======================= -->
+      <!-- ==================================================== TESTIMONIAL SECTION ======================= -->
       <section id="TestimonialsSection" class="py-5">
         <div class="container text-center">
           <h1 class="section-title mb-5">What Our Clients Say</h1>
@@ -415,101 +413,55 @@
       </section>
 
       <!-- Contact Section -->
-      <section class="contact" id="contact">
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.4072282397724!2d18.502590775070704!3d-33.80180261559065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5f5b8b5442af%3A0x328f6304a3032e8c!2s2%20Turnberry%20Rd%2C%20Bloubergstrand%2C%20Cape%20Town%2C%207441!5e0!3m2!1sen!2sza!4v1759176451026!5m2!1sen!2sza"
-            allowfullscreen=""
-            loading="lazy"
-          >
-          </iframe>
+<section class="contact-section container">
+  <h3 class="section-title">Find Us & Get in Touch</h3>
+  <div class="row">
+    
+    <!-- Google Map -->
+    <div class="col-md-6">
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.407055551178!2d18.502590775570926!3d-33.80180707325223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5f5b8b5442af%3A0x328f6304a3032e8c!2s2%20Turnberry%20Rd%2C%20Bloubergstrand%2C%20Cape%20Town%2C%207441!5e0!3m2!1sen!2sza!4v1760241547632!5m2!1sen!2sza" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="col-md-6">
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name">
         </div>
 
-        <div class="contact-info">
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <p>
-              <a href="mailto:info@imbovane.africa">info@imbovane.africa</a>
-            </p>
-          </div>
-
-          <div class="contact-item">
-            <i class="fas fa-phone"></i>
-            <p><a href="tel:+27878988014">+278 7898 8014</a></p>
-          </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option value="">Select your country</option>
+            <option value="India">India</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Japan">Japan</option>
+          </select>
         </div>
 
-        <div class="contact-button">
-          <a href="#reachout" class="btn">Get in Touch</a>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <textarea name="subject" id="subject" placeholder="Enter your message..."></textarea>
         </div>
-      </section>
 
-      <section id="LinkSection">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5 link-col">
-              <div class="brandLink mb-5">
-                <img
-                  src="Images/imbovane-transparent-white-sub-bolder.png"
-                  alt="Logo"
-                  width="360"
-                  height="90"
-                />
-              </div>
+        <button type="submit" class="btn-submit">Submit</button>
+      </form>
+    </div>
 
-              <!-- Socials -->
-              <div class="social-icons mb-3">
-                <a href="https://facebook.com" target="_blank" rel="noopener">
-                  <span class="sr-only">Facebook</span>
-                  <i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener">
-                  <span class="sr-only">LinkedIn</span>
-                  <i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
+  </div>
+</section>
 
-              <!-- Email -->
-              <p>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:info@imbovane.africa">info@imbovane.africa</a>
-              </p>
-
-              <!-- Phone -->
-              <p>
-                <i class="fas fa-phone"></i>
-                <a href="tel:+27878988014">+278 7898 8014</a>
-              </p>
-            </div>
-
-            <div class="col-md-2 link-col">
-              <h5>About</h5>
-              <ul>
-                <li><a href="#about">Who We Are</a></li>
-                <li><a href="#about">Our Mission</a></li>
-                <li><a href="#about">Our Vision</a></li>
-              </ul>
-            </div>
-
-            <div class="col-md-2 link-col">
-              <h5>Services</h5>
-              <ul>
-                <li><a href="#packages">Company Registration</a></li>
-                <li><a href="#packages">Business Planning</a></li>
-                <li><a href="#packages">Coaching</a></li>
-              </ul>
-            </div>
-
-            <div class="col-md-2 link-col">
-              <h5>Contact</h5>
-              <ul>
-                <li><a href="#contact">Get in Touch</a></li>
-                <li><a href="#contact">Location</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- Footer -->
       <footer id="legal">
@@ -519,6 +471,10 @@
         <p id="signiture">Designed & Developed by DIcode Digital ltd.</p>
       </footer>
     </main>
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Your custom script -->
     <script src="main.js"></script>
   </body>
 </html>
