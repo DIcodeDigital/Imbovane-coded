@@ -44,232 +44,210 @@
     />
   </head>
   <body>
-    <!-- Hero Section -->
-    <header
-      id="MainHeader"
-      class="d-flex justify-content-between align-items-center p-3"
-    >
-      <div class="brand d-flex align-items-center">
-        <img
-          src="Images/imbovane-transparent-white-sub-bolder.png"
-          alt="Logo"
-          width="300"
-          height="75"
-          class="me-2"
-        />
+    <!-- ===================== HEADER ===================== -->
+<header id="MainHeader" class="fixed-top py-3 glass-nav sticky-header">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="brand d-flex align-items-center">
+      <img
+        src="Images/imbovane-transparent-white-sub-bolder.png"
+        alt="Logo"
+        width="260"
+        height="65"
+      />
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid justify-content-center">
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#packages">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#TestimonialsSection">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <nav class="navbar navbar-expand-lg glass-nav custom-navbar sticky-nav">
-        <div class="container-fluid justify-content-center">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <div class="auth-buttons d-none d-md-flex gap-2">
+      <button class="btn btn-outline-light">Client Login</button>
+      <button class="btn btn-danger">Admin Login</button>
+    </div>
+  </div>
+</header>
 
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#packages">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<!-- ===================== HERO SECTION ===================== -->
+<section id="HeroSection">
+  <div class="slide-layer"></div>
+  <div class="slide-layer"></div>
 
-      <div class="d-flex gap-2 auth-buttons">
-        <button class="btn btn-outline-light">Sign In</button>
-        <button class="btn btn-danger">Sign Up</button>
-      </div>
-    </header>
+  <div id="heroOverlay"></div>
 
-    <main>
-      <section id="HeroSection">
-        <div class="slide-layer"></div>
-        <div class="slide-layer"></div>
-        <div id="heroContent">
-          <h1 class="caprasimo-regular"></h1>
-          <p></p>
-          <button class="btn btn-danger">Learn More</button>
-        </div>
-        <div id="slideIndicators"></div>
-      </section>
+  <div id="heroContent">
+    <h1 class="caprasimo-regular"></h1>
+    <p></p>
+    <button class="btn btn-danger cta-btn">Discover More</button>
+  </div>
 
-      <!-- About Section-->
-      <section id="AboutSection">
-        <h1 class="caprasimo-regular">Who are we?</h1>
-        <div id="AboutContent">
-          <div id="Tblock0" class="TextBlock">
-            <h2 class="caprasimo-regular">Imbovane</h2>
-            <p>
-              Imbovane is taken from the IsiXhosa word meaning
-              <strong>ANT</strong>. Ants are symbols of strength, diligence,
-              willpower, unity, and loyalty — values our business embodies.
-            </p>
-            <a href="#about" class="more-link"
-              >More Info <i class="fas fa-arrow-right"></i
-            ></a>
-          </div>
+  <div id="slideIndicators"></div>
+</section>
 
-          <div id="Tblock1" class="TextBlock">
-            <p>
-              <em
-                >“It’s not enough to be busy. So are the ants. The question is:
-                what are we busy about?”</em
-              >
-            </p>
-            <p class="caprasimo-regular">– Henry David Thoreau</p>
-          </div>
+<!-- ===================== SCROLL TO TOP BUTTON ===================== -->
+<button id="scrollTopBtn" title="Go to top">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
 
-          <div id="Tblock2" class="TextBlock">
-            <h2 class="caprasimo-regular">Our Story</h2>
-            <p>
-              Founded in 2020, Imbovane Business and Strategy helps
-              entrepreneurs and small businesses build strong foundations
-              through planning, coaching, and strategy development.
-            </p>
-            <a href="#about" class="more-link"
-              >More Info <i class="fas fa-arrow-right"></i
-            ></a>
-          </div>
-        </div>
-      </section>
 
-      <!-- Service Section-->
-      <section id="ServiceSection">
-        <h1 class="caprasimo-regular text-center text-white mb-3 serviceH">
-          OUR SERVICES
-        </h1>
-        <p class="text-center text-white serviceP">
-          Entrepreneurs are not born, they are built
+<!-- =================== ABOUT SECTION =================== -->
+<section id="AboutSection" class="py-5">
+  <div class="container">
+    <!-- Section Title -->
+    <h1 class="about-heading caprasimo-regular text-center mb-5">
+      Who Are We?
+    </h1>
+
+    <div class="about-grid">
+      <!-- Left Column: Story & Values -->
+      <div class="about-text">
+        <h2 class="subheading caprasimo-regular">Imbovane</h2>
+        <p class="lead">
+          <strong>Imbovane</strong> is derived from the isiXhosa word for
+          <strong>“ant”</strong> — a symbol of strength, diligence, and unity.
+          Just like the ant, we believe in the quiet power of collective
+          discipline, strategic effort, and unwavering willpower. These values
+          guide every project we undertake.
         </p>
-        <div class="services-grid">
-          <div class="servicediv">
-            <i class="fa-solid fa-people-group"></i>
-            <h3>SMME Shaped Solutions</h3>
-          </div>
 
-          <div class="servicediv">
-            <i class="fa-solid fa-file-signature"></i>
-            <h3>Company Registration</h3>
-          </div>
+        <blockquote class="inspire-quote">
+          “It’s not enough to be busy. So are the ants. The question is: what
+          are we busy about?”
+          <span class="quote-author">– Henry David Thoreau</span>
+        </blockquote>
 
-          <div class="servicediv">
-            <i class="fa-solid fa-clipboard-list"></i>
-            <h3>Business Planning</h3>
-          </div>
+        <h2 class="subheading caprasimo-regular mt-4">Our Story</h2>
+        <p>
+          Founded in <strong>2020</strong> by <strong>Leonardo Barnes</strong>,
+          Imbovane Business and Strategy empowers entrepreneurs and small
+          businesses to grow sustainably through
+          <em>planning, coaching, and strategic transformation</em>.
+          Our approach combines analytical precision with creative vision —
+          ensuring every client’s journey is structured, measurable, and deeply
+          aligned with their long-term purpose.
+        </p>
 
-          <div class="servicediv">
-            <i class="fa-solid fa-chess-board"></i>
-            <h3>Strategic Planning</h3>
-          </div>
+        <!-- Call to action button -->
+        <a href="#ServicesSection" class="cta-link">
+          Discover Our Approach <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
 
-          <div class="servicediv">
-            <i class="fa-solid fa-chalkboard-teacher"></i>
-            <h3>Business Coaching</h3>
-          </div>
-
-          <div class="servicediv more">
-            <i class="fa-solid fa-plus"></i>
-            <h3>4 More</h3>
-          </div>
-        </div>
-      </section>
-
-      <!-- Service Section -->
-      <section id="StrategySection">
-        <div id="stratInfo">
-          <div id="stratContent">
-            <div class="stratdiv0">
-              <h3 class="caprasimo-regular">Main Principles</h3>
-              <p>
-                Entrepreneurs are not born, they are built. Success requires
-                commitment, growth and determination.
-              </p>
-              <a href="#about" class="more-link"
-                >More Info <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-
-            <div class="stratdiv0">
-              <h3 class="caprasimo-regular">Effective Planning</h3>
-              <p>
-                “Proper Planning Prevents Poor Performance!” A systematic
-                approach helps navigate uncertainty.
-              </p>
-              <a href="#about" class="more-link"
-                >More Info <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-
-          <div id="stratContent2">
-            <div class="stratdiv">
-              <h3 class="caprasimo-regular">Pursue Excellence</h3>
-              <p>
-                Constant innovation, adaptation and vigilance lead to
-                sustainable improvement and customer value.
-              </p>
-              <a href="#about" class="more-link"
-                >More Info <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-
-            <div class="stratdiv">
-              <h3 class="caprasimo-regular">Distinctive Brand</h3>
-              <p>
-                Your brand is your personality. It sets you apart and builds
-                recognition in the minds of customers.
-              </p>
-              <a href="#about" class="more-link"
-                >More Info <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-
-            <div class="stratdiv">
-              <h3 class="caprasimo-regular">Niche Market</h3>
-              <p>
-                Targeting the right people creates stronger connections and
-                builds lasting businesses.
-              </p>
-              <a href="#about" class="more-link"
-                >More Info <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-
-            <div class="stratdiv">
-              <h3 class="caprasimo-regular">Customer Satisfaction</h3>
-              <p>
-                Exceptional service creates loyalty. Exceed expectations and
-                keep clients coming back.
-              </p>
-              <a href="#about" class="more-link"
-                >More Info <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
+      <!-- Right Column: Visual / Interactive Card -->
+      <div class="about-visual">
+        <div class="visual-card" id="visualCard">
+          <div class="overlay"></div>
+          <div class="visual-text">
+            <h3>Driven by Insight</h3>
+            <p>
+              Strategy is not just about numbers — it’s about clarity, purpose,
+              and execution. Every solution we design starts with understanding
+              your business at its core.
+            </p>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <button class="learn-more-btn">Learn More</button>
-      </section>
+
+
+    <!-- ========== HOMEPAGE SERVICES (Premium, conversion-focused) ========== -->
+<section id="ServiceSection" class="services-hero">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="services-header">
+      <h2>Our Services</h2>
+      <p class="lead">Built for ambitious founders who want strategy that actually delivers.</p>
+    </div>
+
+    <div class="services-body">
+      <!-- Left: cards grid -->
+      <div class="services-cards" role="list">
+        <!-- Service card (repeat pattern) -->
+        <article class="service-card" tabindex="0" role="listitem" aria-label="SMME Shaped Solutions — brief">
+          <div class="card-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></div>
+          <h3>SMME Shaped Solutions</h3>
+          <p class="card-desc">Tailored operating models that reduce friction and accelerate time-to-profit.</p>
+        </article>
+
+        <article class="service-card" tabindex="0" role="listitem" aria-label="Company Registration">
+          <div class="card-icon"><i class="fa-solid fa-file-signature" aria-hidden="true"></i></div>
+          <h3>Company Registration & Compliance</h3>
+          <p class="card-desc">Fast, audit-ready registration and compliance systems so you can win contracts and funding.</p>
+        </article>
+
+        <article class="service-card" tabindex="0" role="listitem" aria-label="Business Planning">
+          <div class="card-icon"><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i></div>
+          <h3>Business Planning (Bankable)</h3>
+          <p class="card-desc">Investor- and lender-ready plans that make your growth case clear and fundable.</p>
+        </article>
+
+        <article class="service-card" tabindex="0" role="listitem" aria-label="Strategic Planning">
+          <div class="card-icon"><i class="fa-solid fa-chess-board" aria-hidden="true"></i></div>
+          <h3>Strategic Planning & Positioning</h3>
+          <p class="card-desc">Clarity and priorities so every action moves you toward measurable goals.</p>
+        </article>
+
+        <article class="service-card" tabindex="0" role="listitem" aria-label="Business Coaching">
+          <div class="card-icon"><i class="fa-solid fa-chalkboard-teacher" aria-hidden="true"></i></div>
+          <h3>Business Coaching</h3>
+          <p class="card-desc">Practical coaching that builds internal capability and removes bottlenecks.</p>
+        </article>
+
+        <!-- Large arrow card linking to full services page (gateway card) -->
+        <a class="service-card arrow-card" href="/services.html" aria-label="See full services" role="listitem">
+          <div class="arrow-wrap">
+            <span class="arrow-symbol">→</span>
+            <span class="arrow-text">Explore full services</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Right: Leonardo photo cluster + micro-case -->
+      <aside class="services-visual" aria-hidden="false">
+        <div class="photo-stack">
+          <!-- replace sources with your actual images -->
+          <img src="Images/leonardo-portrait.jpg" alt="Leonardo Barnes — Founder" class="photo main" />
+          <img src="Images/leonardo-workshop.jpg" alt="" class="photo small one" />
+          <img src="Images/workspace-detail.jpg" alt="" class="photo small two" />
+          <img src="Images/leonardo-candid-bw.jpg" alt="" class="photo small three" />
+        </div>
+
+        <div class="micro-case">
+          <strong>Result-focused:</strong>
+          <p>Example: Improved client cash conversion +28% in 6 months — systems + pricing strategy.</p>
+          <a class="cta-ghost" href="/services.html">Book a clarity call</a>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+</section>
+
 
       <!-- Stats Section -->
       <section id="StatsSection">
@@ -333,11 +311,10 @@
         </div>
       </section>
 
-      <!-- Testemonial Section -->
+      <!-- ======================= TESTIMONIAL SECTION ======================= -->
       <section id="TestimonialsSection" class="py-5">
         <div class="container text-center">
-          <h1 class="caprasimo-regular mb-3">WHAT OUR CLIENTS SAY</h1>
-          <p class="lilita-one-regular fs-4 text-muted">Testimonials</p>
+          <h1 class="section-title mb-5">What Our Clients Say</h1>
 
           <div
             id="testimonialCarousel"
@@ -346,33 +323,66 @@
           >
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <blockquote class="testimonial">
+                <div class="testimonial-card shadow-sm">
+                  <div class="quote-icon">“</div>
                   <p>
-                    “Best service ever, you gave me a couple of crucial points
-                    to consider.”
+                    Imbovane’s personal touch and consistent willingness to
+                    assist made the engagement seamless. The overall experience
+                    was highly professional and impactful, resulting in a clean
+                    SARS and CIPC record for our organisation. We would gladly
+                    recommend their services.
                   </p>
-                  <footer>– Jerome Sales</footer>
-                </blockquote>
+                  <footer>
+                    — <span>Sikhumbuzo Mthombeni</span>, Director – Due Quest
+                    Pty Ltd
+                  </footer>
+                </div>
               </div>
 
               <div class="carousel-item">
-                <blockquote class="testimonial">
+                <div class="testimonial-card shadow-sm">
+                  <div class="quote-icon">“</div>
                   <p>
-                    “Amazing support and great attention to detail. Highly
-                    recommended!”
+                    Leonardo is an outstanding professional who consistently
+                    delivers exceptional results. With sharp insight and a clear
+                    mastery of his work, he is highly reliable, punctual, and
+                    always on point. It’s a pleasure working with someone so
+                    capable and dependable. Highly recommended!
                   </p>
-                  <footer>– Placeholder Client</footer>
-                </blockquote>
+                  <footer>
+                    — <span>Debbie Jansen</span>, Director – RDK Outsourcing Pty
+                    Ltd
+                  </footer>
+                </div>
               </div>
 
               <div class="carousel-item">
-                <blockquote class="testimonial">
+                <div class="testimonial-card shadow-sm">
+                  <div class="quote-icon">“</div>
                   <p>
-                    “Professional, fast, and reliable. Couldn’t ask for better
-                    service.”
+                    Thank you once again for the ultimately professional
+                    service.
                   </p>
-                  <footer>– Placeholder Client</footer>
-                </blockquote>
+                  <footer>
+                    — <span>Illse Jacobs</span>, Director – Cameo Enterprises
+                    Pty Ltd
+                  </footer>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="testimonial-card shadow-sm">
+                  <div class="quote-icon">“</div>
+                  <p>
+                    Leo is incredibly knowledgeable and patient. He guided me
+                    through every step of the business plan with clarity and
+                    care. I highly recommend his services to any entrepreneur
+                    seeking strategic support.
+                  </p>
+                  <footer>
+                    — <span>Annelise Moolman</span>, T/A Koekklitsers
+                  </footer>
+                </div>
               </div>
             </div>
 
@@ -381,9 +391,12 @@
               type="button"
               data-bs-target="#testimonialCarousel"
               data-bs-slide="prev"
-              aria-label="Next testimonial"
+              aria-label="Previous testimonial"
             >
-              <span class="carousel-control-prev-icon"></span>
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
             </button>
             <button
               class="carousel-control-next"
@@ -392,7 +405,10 @@
               data-bs-slide="next"
               aria-label="Next testimonial"
             >
-              <span class="carousel-control-next-icon"></span>
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
             </button>
           </div>
         </div>

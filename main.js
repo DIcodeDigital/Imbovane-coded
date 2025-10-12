@@ -1,3 +1,4 @@
+// Landing Page Section
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const slides = [
@@ -98,9 +99,12 @@ window.addEventListener("load", () => {
   setTimeout(() => buttons.classList.add("fade-in"), 1600);
 });
 
+// =================== ABOUT SECTION SCROLL + PARALLAX ===================
 document.addEventListener("DOMContentLoaded", () => {
   const aboutSection = document.querySelector("#AboutSection");
+  const visualCard = document.querySelector("#visualCard");
 
+  // Fade in when visible
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -110,12 +114,23 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.5 }
+    { threshold: 0.4 }
   );
 
   observer.observe(aboutSection);
+
+  // Subtle parallax effect on visual card
+  window.addEventListener("scroll", () => {
+    const rect = visualCard.getBoundingClientRect();
+    const scrollOffset = window.scrollY + rect.top;
+    const speed = 0.2; // control parallax intensity
+    const yPos = (window.scrollY - scrollOffset) * speed;
+
+    visualCard.style.transform = `translateY(${yPos}px) scale(1.02)`;
+  });
 });
 
+// service section
 document.addEventListener("DOMContentLoaded", () => {
   const serviceSection = document.querySelector("#ServiceSection");
 
@@ -132,6 +147,13 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   observer.observe(serviceSection);
+});
+
+// Make arrow symbol animate on hover for accessibility: also allow Enter key activation when focused.
+document.querySelectorAll(".service-card").forEach((card) => {
+  card.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") card.click();
+  });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -204,4 +226,29 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   observer.observe(statsSection);
+});
+
+// ===== Sticky Navbar on Scroll =====
+window.addEventListener("scroll", () => {
+  const header = document.querySelector(".sticky-header");
+  if (window.scrollY > 100) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
+// ===== Scroll-to-Top Button =====
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollTopBtn.classList.add("show");
+  } else {
+    scrollTopBtn.classList.remove("show");
+  }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
