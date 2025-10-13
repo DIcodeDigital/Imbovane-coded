@@ -1,0 +1,814 @@
+body {
+  margin: 0;
+  width: 100%;
+  background:  #f7f7f7;
+  font-family: "Outfit", sans-serif;
+}
+
+/*********************** FONTS ************************/
+
+.alfa-slab-one-regular {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poller-one-regular {
+  font-family: "Poller One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caprasimo-regular {
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gravitas-one-regular {
+  font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.custom-navbar { 
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 50px; 
+  padding: 0.5rem 1rem; 
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(141, 141, 151, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+}
+
+.navbar-nav {
+  gap: 2.5rem;
+}
+
+.navbar .nav-link.active {
+  color: #ff4d4d !important;
+  font-weight: 600;            
+  position: relative;          
+}
+
+.navbar .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
+  height: 2px;
+  background-color: #ff4d4d;
+  border-radius: 2px;
+}
+
+#MainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+.navbar .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #ff4d4d !important;
+}
+
+.navbar-brand span {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.btn {
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-danger {
+  background-color: #ff4d4d;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #e63c3c;
+}
+
+#MainHeader { 
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 10;
+  background: transparent; 
+}
+
+
+
+/*#HeroSect {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../Images/IMG-20241029-WA0008\(1\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px) brightness(0.7);
+    z-index: 0;
+    overflow: hidden;
+}*/
+
+#HeroSect{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#HeroSect::before {
+  content: "";
+  position: absolute;
+  /*top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;*/
+  inset: -10px;
+  background-image: url('../Images/IMG-20241029-WA0008\(1\).jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(0px) brightness(0.5);
+  z-index: 0;
+}
+
+
+/*#HeroSect::before {
+    content: "";
+    position: absolute;
+    background-image: url('../Images/IMG-20241029-WA0008\(1\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px) brightness(0.7);
+}*/
+
+#heroSectCntnt {
+  position: relative;
+  align-self: center;
+  text-align: center;
+  z-index: 1;
+  margin: 0 auto;
+  margin-top: 18%;
+  color: white;
+  max-width: 800px;
+}
+
+#heroSectCntnt h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+#heroSectCntnt p {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+
+#BioSection {
+    width: 100%;
+    height: 100vh;
+    margin-top:5%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+#BioBox {
+  position: absolute;
+  background: rgb(255, 252, 252);
+  margin-top: 5%;
+  width: 30%;
+  height: 80vh;
+  margin-left: 8%;
+  border-radius: 10px;
+  padding: 40px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.158);
+  z-index: 6;
+}
+
+#BioBox h1{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+#BioBox p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#ImageBox {
+  position: absolute;
+  right: 8%;
+  width: 50%;
+  height: 80vh;
+  margin-top: 10%;
+  align-items: center;
+  justify-items: center;
+}
+
+#ImageBox img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+#QuotationSect {
+  width: 100%;
+  height: 50vh;
+  margin-top: 6%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0a021de8;
+  color: white;
+  padding: 50px 8%;
+  gap: 40px;
+}
+
+/* Left side: the quote */
+#QuoteDiv {
+  flex: 1;
+  font-size: 1.6rem;
+  font-style: italic;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+#QuoteDiv blockquote {
+  margin: 0;
+  padding-left: 20px;
+  border-left: 4px solid #ff4d4d;
+}
+
+#QuoteDiv .author {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #ff4d4d;
+}
+
+/* Right side: the image */
+#QuoteImg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#QuoteImg img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Responsive (mobile/tablet view) */
+@media (max-width: 992px) {
+  #QuotationSect {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 60px 5%;
+  }
+
+  #QuoteDiv blockquote {
+    border-left: none;
+    border-top: 3px solid #ff4d4d;
+    padding-top: 15px;
+  }
+
+  #QuoteImg img {
+    margin-top: 30px;
+    max-width: 90%;
+  }
+}
+
+
+#BioSect2 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /*align-items: flex-end;*/
+  justify-content: flex-start;
+  margin-top: 5%;
+  padding: 80px 8%;
+  background-color: #f7f7f7;
+}
+
+#biocontent {
+  width: 70%;
+  background: /*white*/ #f7f7f7;
+  border-left: 4px solid  #851515;
+  padding: 40px;
+  margin-left:25%;
+  /*box-shadow: 0 8px 25px rgba(0,0,0,0.1);*/
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+#biocontent h1 {
+  font-size: 40px;
+  color: #222;
+  margin-bottom: 20px;
+
+}
+
+#biocontent p {
+  color: #444;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+}
+
+.bioimg {
+  width: 99%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ✅ Responsive layout */
+@media (max-width: 992px) {
+  #BioSect2 {
+    align-items: center;
+    padding: 60px 5%;
+  }
+
+  #biocontent {
+    width: 90%;
+    text-align: center;
+  }
+
+  .bioimg {
+    width: 90%;
+  }
+}
+
+
+/* ===================== GOALS SECTION ====================== */
+
+#GoalsSect {
+  width: 100%;
+  padding: 80px 10%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.goal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.goal-text {
+  width: 50%;
+}
+
+.goal-text.mission {
+  padding-left: 30px;
+  border-left: 4px solid #851515;
+}
+
+.goal-text.vision {
+  margin-left: 50px;
+  border-right: 4px solid #851515;
+}
+
+.goal-text h1 {
+  font-size: 40px;
+  color: #851515;
+  margin-bottom: 20px;
+}
+
+.goal-text p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.goal-img {
+  width: 45%;
+}
+
+.goal-img img {
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .goal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .goal.vision {
+    flex-direction: column;
+  }
+
+  .goal-text,
+  .goal-img {
+    width: 100%;
+  }
+
+  .goal-text h1 {
+    font-size: 32px;
+  }
+
+  .goal-text p {
+    font-size: 16px;
+  }
+}
+
+
+/* ==================== PRINCIPLES SECTION ==================== */
+
+#Values {
+  background-color: #f7f7f7;
+  padding: 100px 10%;
+  text-align: center;
+}
+
+#Values .section-title {
+  font-size: 45px;
+  color: #0a021de8;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+#Values .section-title::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: #0a021de8;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Grid layout */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-content: center;
+}
+
+/* Each card */
+.value-card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 40px 25px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  border-top: 5px solid #0a021de8;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Icon style */
+.value-card i {
+  font-size: 40px;
+  color: #0a021de8;
+  margin-bottom: 20px;
+}
+
+/* Headings & text */
+.value-card h3 {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.value-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #Principles {
+    padding: 80px 6%;
+  }
+
+  .value-card {
+    padding: 30px 20px;
+  }
+}
+
+/* ==================== EXPLORE SERVICES CTA ==================== */
+#ExploreServices {
+  background: linear-gradient(to right, #851515, #0a021de8);
+  padding: 100px 10%;
+  text-align: center;
+  color: #fff;
+}
+
+.explore-box {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.explore-box h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.explore-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #f2f2f2;
+}
+
+.explore-btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #851515;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #f4f4f4;
+  transform: translateY(-3px);
+}
+
+
+/* ==================== OPPORTUNITY SECTION ==================== */
+#OpportunitySect {
+  background-color: #fff;
+  padding: 120px 10%;
+  color: #0a021de8;
+}
+
+.opportunity-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.opportunity-text {
+  flex: 1;
+}
+
+.opportunity-text h2 {
+  font-size: 2.2rem;
+  color: #851515;
+  margin-bottom: 30px;
+}
+
+.opportunity-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.opportunity-text li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.opportunity-text li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #851515;
+  font-size: 1.5rem;
+  top: 0;
+}
+
+.opportunity-text strong {
+  color: #0a021de8;
+}
+
+.opportunity-image {
+  flex: 1;
+  text-align: right;
+}
+
+.opportunity-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .opportunity-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .opportunity-image img {
+    max-width: 100%;
+  }
+
+  .opportunity-text li {
+    text-align: left;
+  }
+}
+
+
+/* ======================  LINKS SECTION STYLES ====================== */
+
+#LinkSection {
+  background-color: #190530;
+  color: white;
+  padding: 50px 5%;
+}
+
+#LinkSection .brandLink img {
+  margin-left: -28px;
+}
+
+#LinkSection .link-col h5 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#LinkSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+#LinkSection ul li {
+  margin-bottom: 8px;
+}
+
+#LinkSection ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#LinkSection ul li a:hover {
+  color: #fff;
+}
+
+#LinkSection .social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 20px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+#LinkSection .social-icons a:hover {
+  color: #851515; /* theme color */
+}
+
+#LinkSection p, 
+#LinkSection a {
+  color: #ddd;
+  font-size: 14px;
+}
+
+#LinkSection p i {
+  margin-right: 8px;
+  color: #851515;
+}
+
+#legal {
+  background-color: rgb(23, 16, 41);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  height: 15vh;
+}
+
+
+/* Keep header fixed */
+#MainHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.4s ease;
+}
+
+/* Your navbar area (the part that should darken) */
+
+.custom-navbar { 
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border-radius: 50px; 
+  padding: 0.5rem 1rem; 
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(141, 141, 151, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  transition: all 0.4s ease;
+}
+
+/* Only the navbar darkens when scrolled */
+#MainHeader.scrolled .custom-navbar {
+  background: rgba(65, 64, 64, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Hidden state (when scrolling stops) */
+.custom-navbar.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Visible state (default) */
+.custom-navbar {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+/* Hide logo + buttons when scrolling */
+#MainHeader.scrolled .brand,
+#MainHeader.scrolled .auth-buttons {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-20px);
+  transition: all 0.4s ease;
+}
+
+/* Normal visible state */
+#MainHeader .brand,
+#MainHeader .auth-buttons {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.4s ease;
+}
